@@ -239,7 +239,7 @@ function doSomething3 () {
             [myTiles.tile0,myTiles.tile1,myTiles.tile2,myTiles.tile3,myTiles.tile4,myTiles.tile5,myTiles.tile6,myTiles.tile7,myTiles.tile8,myTiles.tile9,myTiles.tile10],
             TileScale.Sixteen
         )))
-        tiles.placeOnTile(mySprite2, tiles.getTileLocation(0, 5))
+        tiles.placeOnTile(mySprite, tiles.getTileLocation(0, 5))
         if (_2_players) {
             tiles.placeOnTile(the_payer_2, tiles.getTileLocation(0, 5))
         }
@@ -343,7 +343,7 @@ f b c b b b c b b b b f . . . .
             true
             )
             tiles.placeOnTile(myEnemy, value)
-            myEnemy.follow(mySprite2, 50)
+            myEnemy.follow(mySprite, 50)
         }
     }
 }
@@ -360,9 +360,9 @@ controller.up.onEvent(ControllerButtonEvent.Pressed, function () {
     }
 })
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
-    if (mySprite2.isHittingTile(CollisionDirection.Bottom)) {
+    if (mySprite.isHittingTile(CollisionDirection.Bottom)) {
         for (let index = 0; index < 26; index++) {
-            mySprite2.y += -1
+            mySprite.y += -1
             pause(1)
         }
     }
@@ -495,7 +495,7 @@ function doSomething () {
             [myTiles.tile0,myTiles.tile1,myTiles.tile2,myTiles.tile3,myTiles.tile4,myTiles.tile5,myTiles.tile6,myTiles.tile7,myTiles.tile8,myTiles.tile9,myTiles.tile10],
             TileScale.Sixteen
         )))
-        tiles.placeOnTile(mySprite2, tiles.getTileLocation(0, 9))
+        tiles.placeOnTile(mySprite, tiles.getTileLocation(0, 9))
         if (_2_players) {
             tiles.placeOnTile(the_payer_2, tiles.getTileLocation(0, 9))
         }
@@ -599,7 +599,7 @@ f b c b b b c b b b b f . . . .
             true
             )
             tiles.placeOnTile(myEnemy, value)
-            myEnemy.follow(mySprite2, 50)
+            myEnemy.follow(mySprite, 50)
         }
     }
 }
@@ -657,7 +657,7 @@ function doSomething5 () {
             [myTiles.tile0,myTiles.tile1,myTiles.tile2,myTiles.tile3,myTiles.tile4,myTiles.tile5,myTiles.tile6,myTiles.tile7,myTiles.tile8,myTiles.tile9,myTiles.tile10],
             TileScale.Sixteen
         )))
-        tiles.placeOnTile(mySprite2, tiles.getTileLocation(0, 9))
+        tiles.placeOnTile(mySprite, tiles.getTileLocation(0, 9))
         if (_2_players) {
             tiles.placeOnTile(the_payer_2, tiles.getTileLocation(0, 9))
         }
@@ -761,7 +761,7 @@ f b c b b b c b b b b f . . . .
             true
             )
             tiles.placeOnTile(myEnemy, value)
-            myEnemy.follow(mySprite2, 50)
+            myEnemy.follow(mySprite, 50)
         }
     }
 }
@@ -813,7 +813,7 @@ function doSomething2 () {
             [myTiles.tile0,myTiles.tile1,myTiles.tile2,myTiles.tile3,myTiles.tile4,myTiles.tile5,myTiles.tile6,myTiles.tile7,myTiles.tile8,myTiles.tile9,myTiles.tile10],
             TileScale.Sixteen
         )))
-        tiles.placeOnTile(mySprite2, tiles.getTileLocation(0, 5))
+        tiles.placeOnTile(mySprite, tiles.getTileLocation(0, 5))
         if (_2_players) {
             tiles.placeOnTile(the_payer_2, tiles.getTileLocation(0, 5))
         }
@@ -917,7 +917,7 @@ f b c b b b c b b b b f . . . .
             true
             )
             tiles.placeOnTile(myEnemy, value)
-            myEnemy.follow(mySprite2, 50)
+            myEnemy.follow(mySprite, 50)
         }
     }
 }
@@ -955,7 +955,7 @@ function doSomething6 () {
             [myTiles.tile0,myTiles.tile1,myTiles.tile2,myTiles.tile3,myTiles.tile4,myTiles.tile5,myTiles.tile6,myTiles.tile7,myTiles.tile8,myTiles.tile9,myTiles.tile10],
             TileScale.Sixteen
         )))
-        tiles.placeOnTile(mySprite2, tiles.getTileLocation(0, 9))
+        tiles.placeOnTile(mySprite, tiles.getTileLocation(0, 9))
         if (_2_players) {
             tiles.placeOnTile(the_payer_2, tiles.getTileLocation(0, 9))
         }
@@ -1059,7 +1059,7 @@ f b c b b b c b b b b f . . . .
             true
             )
             tiles.placeOnTile(myEnemy, value)
-            myEnemy.follow(mySprite2, 50)
+            myEnemy.follow(mySprite, 50)
         }
     }
 }
@@ -1087,9 +1087,9 @@ sprites.onOverlap(SpriteKind.Projectile, SpriteKind.Enemy, function (sprite, oth
             otherSprite.destroy()
             info.changeScoreBy(1)
         } else {
-            otherSprite.follow(mySprite2, 0)
+            otherSprite.follow(mySprite, 0)
             pause(300)
-            otherSprite.follow(mySprite2, 50)
+            otherSprite.follow(mySprite, 50)
         }
     }
 })
@@ -1119,7 +1119,7 @@ function doSomething4 () {
             [myTiles.tile0,myTiles.tile1,myTiles.tile2,myTiles.tile3,myTiles.tile4,myTiles.tile5,myTiles.tile6,myTiles.tile7,myTiles.tile8,myTiles.tile9,sprites.dungeon.chestClosed,myTiles.tile10],
             TileScale.Sixteen
         )))
-        tiles.placeOnTile(mySprite2, tiles.getTileLocation(0, 9))
+        tiles.placeOnTile(mySprite, tiles.getTileLocation(0, 9))
         if (_2_players) {
             tiles.placeOnTile(the_payer_2, tiles.getTileLocation(0, 9))
         }
@@ -1182,7 +1182,7 @@ function doSomething4 () {
             [myTiles.tile0,myTiles.tile1,myTiles.tile2,myTiles.tile3,myTiles.tile4,myTiles.tile5,myTiles.tile6,myTiles.tile7,myTiles.tile8,myTiles.tile9,sprites.dungeon.chestClosed,myTiles.tile10],
             TileScale.Sixteen
         )))
-        tiles.placeOnTile(mySprite2, tiles.getTileLocation(0, 9))
+        tiles.placeOnTile(mySprite, tiles.getTileLocation(0, 9))
         if (_2_players) {
             tiles.placeOnTile(the_payer_2, tiles.getTileLocation(0, 9))
         }
@@ -1245,7 +1245,7 @@ function doSomething4 () {
             [myTiles.tile0,myTiles.tile1,myTiles.tile2,myTiles.tile3,myTiles.tile4,myTiles.tile5,myTiles.tile6,myTiles.tile7,myTiles.tile8,myTiles.tile9,sprites.dungeon.chestClosed,myTiles.tile10],
             TileScale.Sixteen
         )))
-        tiles.placeOnTile(mySprite2, tiles.getTileLocation(0, 9))
+        tiles.placeOnTile(mySprite, tiles.getTileLocation(0, 9))
         if (_2_players) {
             tiles.placeOnTile(the_payer_2, tiles.getTileLocation(0, 9))
         }
@@ -1302,7 +1302,7 @@ let x2 = 0
 let y = 0
 let statusbar: StatusBarSprite = null
 let myEnemy: Sprite = null
-let mySprite2: Sprite = null
+let mySprite: Sprite = null
 let _2_players = false
 let statusbar2: StatusBarSprite = null
 let the_payer_2: Sprite = null
@@ -1348,7 +1348,7 @@ if (game.ask("2 payers")) {
 } else {
     _2_players = false
 }
-mySprite2 = sprites.create(img`
+mySprite = sprites.create(img`
 . . . . . . e e e . . . . . . . . 
 . . . . . e d e e e . . . . . . . 
 . . . . . d f d f d . . . . . . . 
@@ -1371,11 +1371,11 @@ mySprite2 = sprites.create(img`
 `, SpriteKind.Player)
 statusbar2 = statusbars.create(20, 2, StatusBarKind.Health)
 statusbar2.setColor(7, 15, 3)
-statusbar2.attachToSprite(mySprite2)
+statusbar2.attachToSprite(mySprite)
 statusbar2.value = 100
 statusbar2.max = 100
-controller.moveSprite(mySprite2, 100, 0)
-mySprite2.ay = 100
+controller.moveSprite(mySprite, 100, 0)
+mySprite.ay = 100
 tilemap.loadMap(tilemap.createMap(tiles.createTilemap(
             hex`1000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000300000000000000000001010101010101010101010101010100020202020202020202020202020202000000000000000000040404040202020000000000000000000404000404020200000000000000000004040000040400000000000000000000010100000404060000000101010101010202010101010100000102020202020202020202020202000102020202020202020202020202020102020202020202020202020202020202020202020202020202020202020202`,
             img`
@@ -1399,7 +1399,7 @@ tilemap.loadMap(tilemap.createMap(tiles.createTilemap(
             [myTiles.tile0,myTiles.tile1,myTiles.tile2,myTiles.tile3,myTiles.tile4,myTiles.tile5,myTiles.tile6,myTiles.tile7,myTiles.tile8,myTiles.tile9,myTiles.tile10],
             TileScale.Sixteen
         )))
-scene.cameraFollowSprite(mySprite2)
+scene.cameraFollowSprite(mySprite)
 scene.setBackgroundColor(8)
 effects.clouds.startScreenEffect()
 forever(function () {
@@ -1925,7 +1925,7 @@ forever(function () {
 })
 forever(function () {
     if (gun == 1) {
-        mySprite2.setImage(img`
+        mySprite.setImage(img`
 . . . . . . e e e . . . . . . . . 
 . . . . . e d e e e . . . . . . . 
 . . . . . d f d f d . . . . . . . 
@@ -1965,7 +1965,7 @@ forever(function () {
 . . . . . . . . . . . . . . . . 
 . . . . . . . . . . . . . . . . 
 . . . . . . . . . . . . . . . . 
-`, mySprite2, x, y)
+`, mySprite, x, y)
                 projectile.setFlag(SpriteFlag.AutoDestroy, false)
                 amo += -1
                 pause(100)
@@ -1976,7 +1976,7 @@ forever(function () {
         }
     }
     if (gun == 2) {
-        mySprite2.setImage(img`
+        mySprite.setImage(img`
 . . . . . . e e e . . . . . . . . 
 . . . . . e d e e e . . . . . . . 
 . . . . . d f d f d . . . . . . . 
@@ -2016,7 +2016,7 @@ forever(function () {
 . . . . . . . . . . . . . . . . 
 . . . . . . . . . . . . . . . . 
 . . . . . . . . . . . . . . . . 
-`, mySprite2, x, y)
+`, mySprite, x, y)
                 projectile.setFlag(SpriteFlag.AutoDestroy, false)
                 amo += -1
                 pause(500)
@@ -2027,7 +2027,7 @@ forever(function () {
         }
     }
     if (gun == 3) {
-        mySprite2.setImage(img`
+        mySprite.setImage(img`
 . . . . . . e e e . . . . . . . . 
 . . . . . e d e e e . . . . . . . 
 . . . . . d f d f d . . . . . . . 
@@ -2067,7 +2067,7 @@ forever(function () {
 . . . . . . . . . . . . . . . . 
 . . . . . . . . . . . . . . . . 
 . . . . . . . . . . . . . . . . 
-`, mySprite2, x, y)
+`, mySprite, x, y)
                 projectile.setFlag(SpriteFlag.AutoDestroy, false)
                 amo += -1
                 pause(100)
